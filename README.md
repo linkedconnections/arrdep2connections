@@ -1,5 +1,7 @@
 # Arrivals and Departures to Connections
 
+__Status__: not functional - work in progress
+
 This javascript library transforms a stream of "arrivals and departures" to "connections".
 
 This code is useful for route planning applications where arrivals and departures are easy to generate, but connections are difficult to get right in the same processing.
@@ -42,7 +44,7 @@ A departure is something of this form:
 
 ```json
 {
-  "departureDate" : "2015-12-25",
+  "date" : "2015-12-25",
   "departureTime" : "23:49",
   "stop" : "{stop1}",
   "other properties" : "other values"
@@ -53,7 +55,7 @@ Explanation:
 
 |property|URI|description|type|
 |:--:|:--:|:--:|:--:|
-|departureDate|[dcterms:date](http://purl.org/dc/terms/date)|date when the trip of the vehicle departed|a day in ISO8601 format or xsd:date|
+|date|[dcterms:date](http://purl.org/dc/terms/date)|date when the trip of the vehicle departed|a day in ISO8601 format or xsd:date|
 |departureTime|[gtfs:departureTime](http://vocab.gtfs.org/terms#departureTime)|departure time given as a duration calculated starting at noon minus 12h in this format "hh:mm"|iso8601 or xsd:duration|
 |stop|[gtfs:stop](http://vocab.gtfs.org/terms#stop)|stop of departure|an identifier of the stop of departure |
 |other properties||Feel free to add anything on here. When properties overlap with an arrival, only the property from the departure is kept in the connection.|||
@@ -62,8 +64,8 @@ An Arrival is something of this form:
 
 ```json
 {
-  "arrivalDate" : "2015-12-25",
-  "arrivalTime" : "24:16", //This is an arrival time on the next day, because the vehicle's trip started the 25th
+  "date" : "2015-12-25",
+  "arrivalTime" : "24:16",
   "stop" : "{stop2}",
   "other properties" : "other values"
 }
@@ -73,7 +75,7 @@ Explanation:
 
 |property|URI|description|type|
 |:--:|:--:|:--:|:--:|
-|arrivalDate|[dcterms:date](http://purl.org/dc/terms/date)|date when the trip of the vehicle departed|a day in ISO8601 format or xsd:date|
+|date|[dcterms:date](http://purl.org/dc/terms/date)|date when the trip of the vehicle departed|a day in ISO8601 format or xsd:date|
 |arrivalTime|[gtfs:arrivalTime](http://vocab.gtfs.org/terms#arrivalTime)|arrival time given as a duration calculated starting at noon minus 12h in this format "hh:mm"|iso8601 or xsd:duration|
 |stop|[gtfs:stop](http://vocab.gtfs.org/terms#stop)|stop of arrival|an identifier of the stop of arrival |
 |other properties| | Feel free to add anything on here. When properties overlap with a departure, only the property from the departure is kept in the connection.|||
@@ -100,4 +102,4 @@ Explanation:
 |arrivalStop|[lc:arrivalStop](http://semweb.mmlab.be/ns/linkedconnections#arrivalStop)|stop of arrival|an identifier of the stop of arrival |
 |departureTime|[lc:departureTime](http://semweb.mmlab.be/ns/linkedconnections#departureTime)|departure date/time|iso8601 or xsd:dateTime|
 |departureStop|[lc:departureStop](http://semweb.mmlab.be/ns/linkedconnections#departureStop)|stop of departure|an identifier of the stop of departure |
-|other properties|||copied properties from the arrival/departure objects|
+|other properties||copied properties from the arrival/departure objects||

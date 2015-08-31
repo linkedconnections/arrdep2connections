@@ -13,6 +13,7 @@
   "author": "Pieter Colpaert",
   "license": "MIT",
   "dependencies": {
+    "async": "^1.4.2",
     "jsonld": "^0.3.25"
   }
 }

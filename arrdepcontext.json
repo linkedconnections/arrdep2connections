@@ -1,0 +1,13 @@
+{
+  "@context" : {
+    "st" : "http://semweb.mmlab.be/ns/stoptimes#",
+    "gtfs" : "http://vocab.gtfs.org/terms#",
+    "arrivalTime" : "gtfs:arrivalTime",
+    "departureTime" : "gtfs:departureTime",
+    "date" : "http://purl.org/dc/terms/date",
+    "stop" : {
+      "@type" : "@id",
+      "@id" : "gtfs:stop"
+    }
+  }
+}

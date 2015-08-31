@@ -1,0 +1,16 @@
+{
+  "@context" : {
+    "lc" : "http://semweb.mmlab.be/ns/linkedconnections#",
+    "gtfs" : "http://vocab.gtfs.org/terms#",
+    "arrivalTime" : "lc:arrivalTime",
+    "departureTime" : "lc:departureTime",
+    "arrivalStop" : {
+      "@type" : "@id",
+      "@id" : "http://semweb.mmlab.be/ns/linkedconnections#arrivalStop"
+    },
+    "departureStop" : {
+      "@type" : "@id",
+      "@id" : "http://semweb.mmlab.be/ns/linkedconnections#departureStop"
+    }
+  }
+}
