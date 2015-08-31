@@ -1,11 +1,11 @@
 {
   "name": "arrdep2connections",
   "version": "1.0.0",
-  "bin": "./arrdep2connections",
+  "bin": "./arrdep2connections.js",
   "description": "Arrivals and Departures to Connections",
   "main": "lib/arrdep2connections.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "keywords": [
     "public transit"
@@ -15,5 +15,8 @@
   "dependencies": {
     "async": "^1.4.2",
     "jsonld": "^0.3.25"
+  },
+  "devDependencies": {
+    "should": "^6.0.3"
   }
 }
