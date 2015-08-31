@@ -1,0 +1,18 @@
+{
+  "name": "arrdep2connections",
+  "version": "1.0.0",
+  "bin": "./arrdep2connections",
+  "description": "Arrivals and Departures to Connections",
+  "main": "lib/arrdep2connections.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "public transit"
+  ],
+  "author": "Pieter Colpaert",
+  "license": "MIT",
+  "dependencies": {
+    "jsonld": "^0.3.25"
+  }
+}
