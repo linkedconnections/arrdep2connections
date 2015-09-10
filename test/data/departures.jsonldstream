@@ -1,0 +1,7 @@
+{ "@context" : {"gtfs": "http://vocab.gtfs.org/terms#", "Departure" : "http://semweb.mmlab.be/ns/stoptimes#Departure", "dct" : "http://purl.org/dc/terms/", "departure" : "http://example.org/departures/", "trip" : "http://example.org/trips/", "stop":"http://example.org/stops/" } }
+{ "@type" : "Departure", "@id" : "departure:1", "gtfs:departureTime" : "12:09", "dct:date" : "20160101", "gtfs:stop" : "stop:1", "gtfs:trip" : "trip:1" }
+{ "@type" : "Departure", "@id" : "departure:2", "gtfs:departureTime" : "36:11", "dct:date" : "20153101", "gtfs:stop" : "stop:3", "gtfs:trip" : "trip:1" }
+{ "@type" : "Departure", "@id" : "departure:3", "gtfs:departureTime" : "12:14", "dct:date" : "20160101", "gtfs:stop" : "stop:1", "gtfs:trip" : "trip:2" }
+{ "@type" : "Departure", "@id" : "departure:4", "gtfs:departureTime" : "12:20", "dct:date" : "20160101", "gtfs:stop" : "stop:2", "gtfs:trip" : "trip:1" }
+{ "@type" : "Departure", "@id" : "departure:5", "gtfs:departureTime" : "12:25", "dct:date" : "20160101", "gtfs:stop" : "stop:1", "gtfs:trip" : "trip:1" }
+{ "@type" : "Departure", "@id" : "departure:6", "gtfs:departureTime" : "12:40", "dct:date" : "20160101", "gtfs:stop" : "stop:3", "gtfs:trip" : "trip:2" }

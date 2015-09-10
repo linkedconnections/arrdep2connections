@@ -14,9 +14,12 @@
   "license": "MIT",
   "dependencies": {
     "async": "^1.4.2",
-    "jsonld": "^0.3.25"
+    "jsonld": "^0.3.25",
+    "jsonld-stream": "^1.0.2",
+    "moment": "^2.10.6"
   },
   "devDependencies": {
-    "should": "^6.0.3"
+    "should": "^6.0.3",
+    "mocha": "^2.3.0"
   }
 }
