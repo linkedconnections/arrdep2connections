@@ -1,6 +1,7 @@
 var ReadStream = require('./lib/ReadStream.js'),
 	ArrDep2Connections = require('./lib/arrdep2connections.js'),
-	stringify = require('JSONStream').stringify(false);
+	stringify = require('JSONStream').stringify(false),
+	fs = require('fs');
 
 // Read filename arrivals.json and departure.json from parameters
 var arrivalsFilename = './' + process.argv[2];
