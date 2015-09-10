@@ -2,7 +2,6 @@ var fs = require('fs'),
     should = require('should'),
     jsonldstream = require('jsonld-stream'),
     ArrDep2Connections = require('../lib/arrdep2connections.js');
-    async = require('async');
 
 describe('Creating lists', function () {
   //Create a stream of arrivals

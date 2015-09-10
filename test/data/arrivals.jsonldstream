@@ -1,8 +1,8 @@
 { "@context" : {"gtfs": "http://vocab.gtfs.org/terms#", "Arrival" : "http://semweb.mmlab.be/ns/stoptimes#Arrival", "dct" : "http://purl.org/dc/terms/", "arrival" : "http://example.org/arrivals/", "trip" : "http://example.org/trips/", "stop":"http://example.org/stops/" } }
-{ "@type" : "Arrival", "@id" : "arrival:1", "gtfs:arrivalTime" : "12:14", "dct:date" : "20160101", "gtfs:stop" : "stop:3", "gtfs:trip" : "trip:1" }
-{ "@type" : "Arrival", "@id" : "arrival:2", "gtfs:arrivalTime" : "12:16", "dct:date" : "20160101", "gtfs:stop" : "stop:1", "gtfs:trip" : "trip:1" }
-{ "@type" : "Arrival", "@id" : "arrival:3", "gtfs:arrivalTime" : "12:19", "dct:date" : "20160101", "gtfs:stop" : "stop:2", "gtfs:trip" : "trip:2" }
-{ "@type" : "Arrival", "@id" : "arrival:4", "gtfs:arrivalTime" : "12:25", "dct:date" : "20160101", "gtfs:stop" : "stop:1", "gtfs:trip" : "trip:1" }
-{ "@type" : "Arrival", "@id" : "arrival:5", "gtfs:arrivalTime" : "12:30", "dct:date" : "20160101", "gtfs:stop" : "stop:2", "gtfs:trip" : "trip:1" }
-{ "@type" : "Arrival", "@id" : "arrival:6", "gtfs:arrivalTime" : "12:45", "dct:date" : "20160101", "gtfs:stop" : "stop:2", "gtfs:trip" : "trip:2" }
-{ "@type" : "Arrival", "@id" : "arrival:7", "gtfs:arrivalTime" : "36:50", "dct:date" : "20153101", "gtfs:stop" : "stop:2", "gtfs:trip" : "trip:1" }
+{ "@type" : "Arrival", "@id" : "arrival:1", "gtfs:arrivalTime" : "12:14", "dct:date" : "20160101", "gtfs:stop" : "stop:3", "gtfs:trip" : "trip:1", "maxStopSequence" : 4 , "gtfs:stopSequence" : 1 }
+{ "@type" : "Arrival", "@id" : "arrival:2", "gtfs:arrivalTime" : "12:16", "dct:date" : "20160101", "gtfs:stop" : "stop:1", "gtfs:trip" : "trip:1", "maxStopSequence" : 4 , "gtfs:stopSequence" : 2 }
+{ "@type" : "Arrival", "@id" : "arrival:3", "gtfs:arrivalTime" : "12:19", "dct:date" : "20160101", "gtfs:stop" : "stop:2", "gtfs:trip" : "trip:2", "maxStopSequence" : 2 , "gtfs:stopSequence" : 1 }
+{ "@type" : "Arrival", "@id" : "arrival:4", "gtfs:arrivalTime" : "12:25", "dct:date" : "20160101", "gtfs:stop" : "stop:1", "gtfs:trip" : "trip:1","maxStopSequence" : 4 , "gtfs:stopSequence" : 3 }
+{ "@type" : "Arrival", "@id" : "arrival:5", "gtfs:arrivalTime" : "12:30", "dct:date" : "20160101", "gtfs:stop" : "stop:2", "gtfs:trip" : "trip:1","maxStopSequence" : 4 , "gtfs:stopSequence" : 4 }
+{ "@type" : "Arrival", "@id" : "arrival:6", "gtfs:arrivalTime" : "12:45", "dct:date" : "20160101", "gtfs:stop" : "stop:2", "gtfs:trip" : "trip:2", "maxStopSequence" : 2 , "gtfs:stopSequence" : 2 }
+{ "@type" : "Arrival", "@id" : "arrival:7", "gtfs:arrivalTime" : "36:50", "dct:date" : "20153101", "gtfs:stop" : "stop:2", "gtfs:trip" : "trip:1","maxStopSequence" : 4 , "gtfs:stopSequence" : 4 }
