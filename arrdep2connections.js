@@ -1,17 +1,15 @@
-var ReadStream = require('./lib/ReadStream.js'),
-	ArrDep2Connections = require('./lib/arrdep2connections.js'),
+var ArrDep2Connections = require('./lib/arrdep2connections.js'),
 	stringify = require('JSONStream').stringify(false),
+    jsonldstream = require('jsonld-stream'),
 	fs = require('fs');
 
-// Read filename arrivals.json and departure.json from parameters
+// Read filename arrivals.jsonldstream and departure.jsonldstream from parameters
 var arrivalsFilename = './' + process.argv[2];
-var arrivalData = require(arrivalsFilename);
 var departuresFilename = './' + process.argv[3];
-var departureData = require(departuresFilename);
 
 // Initialise streams
-var arrivalStream = new ReadStream(arrivalData);
-var departureStream = new ReadStream(departureData);
+var arrivalStream = fs.createReadStream(arrivalsFilename, {encoding: 'utf8'}).pipe(new jsonldstream.Deserializer());
+var departureStream = fs.createReadStream(departuresFilename, {encoding: 'utf8'}).pipe(new jsonldstream.Deserializer());
 var arrdep2connections = new ArrDep2Connections(arrivalStream); // our transform stream
 
 departureStream.pipe(arrdep2connections).pipe(stringify).pipe(process.stdout);
