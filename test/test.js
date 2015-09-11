@@ -16,11 +16,11 @@ describe('Creating lists', function () {
     var count = 0;
     stream.on("data", function (connection) {
       if (connection && !connection["@context"]) {
-        count ++;
+        count++;
       }
     });
     stream.on("end", function () {
-      count.should.be.exactly(6);
+      count.should.be.exactly(2);
       done();
     });
   });
