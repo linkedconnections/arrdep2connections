@@ -11,6 +11,14 @@
     "departureStop" : {
       "@type" : "@id",
       "@id" : "http://semweb.mmlab.be/ns/linkedconnections#departureStop"
+    },
+    "trip" : {
+      "@type" : "@id",
+      "@id" : "gtfs:trip"
+    },
+    "route" : {
+      "@type" : "@id",
+      "@id" : "gtfs:route"
     }
   }
 }
