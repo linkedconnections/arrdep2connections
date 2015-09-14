@@ -15,10 +15,10 @@ npm install -g arrdep2connections
 Now you can use the code on top of 2 files which follow the [JSON-LD stream specification](https://github.com/pietercolpaert/jsonld-stream):
 
 ```bash
-node arrdep2connections arrivalsfile.jsonldstream departurefile.jsonldstream -i context.json > connections.json
+node arrdep2connections --arrivals arrivals.jsonldstream --departures departures.jsonldstream [--mongodb] [--inbound context.json] > connections.jsonldstream
 ```
 
-Optionally, you can specify a different inbound `context.json` using the `-i` flag, and a different outbound context by using the `-o` flag.
+Optionally, you can specify a different inbound `context.json` using the `--inbound` flag, and a different outbound context by using the `--outbound` flag. You can also specify to load connections into MongoDB using the `--mongodb` flag. See `config/development.json` for more configuration options.
 
 ### NodeJS library
 

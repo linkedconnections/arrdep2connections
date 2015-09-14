@@ -2,6 +2,9 @@
   "@context" : {
     "lc" : "http://semweb.mmlab.be/ns/linkedconnections#",
     "gtfs" : "http://vocab.gtfs.org/terms#",
+    "Connection" : "http://semweb.mmlab.be/ns/linkedconnections#Connection",
+    "dct" : "http://purl.org/dc/terms/",
+    "date" : "dct:date",
     "arrivalTime" : "lc:arrivalTime",
     "departureTime" : "lc:departureTime",
     "arrivalStop" : {
@@ -19,6 +22,7 @@
     "route" : {
       "@type" : "@id",
       "@id" : "gtfs:route"
-    }
+    },
+    "headsign" : "gtfs:headsign"
   }
 }

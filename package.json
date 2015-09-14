@@ -16,7 +16,9 @@
     "JSONStream": "^1.0.4",
     "jsonld": "^0.3.25",
     "jsonld-stream": "^1.0.2",
-    "moment": "^2.10.6"
+    "moment": "^2.10.6",
+    "mongodb": "^2.0.43",
+    "param": "^1.0.1"
   },
   "devDependencies": {
     "should": "^6.0.3",
