@@ -1,7 +1,6 @@
-{ "@context" : {"gtfs": "http://vocab.gtfs.org/terms#", "Departure" : "http://semweb.mmlab.be/ns/stoptimes#Departure", "dct" : "http://purl.org/dc/terms/", "departure" : "http://example.org/departures/", "trip" : "http://example.org/trips/", "stop":"http://example.org/stops/" } }
-{ "@type" : "Departure", "@id" : "departure:1", "gtfs:departureTime" : "12:09", "dct:date" : "20160101", "gtfs:stop" : "stop:1", "gtfs:trip" : "trip:1", "maxStopSequence" : 4 , "gtfs:stopSequence" : 1 }
-{ "@type" : "Departure", "@id" : "departure:2", "gtfs:departureTime" : "36:11", "dct:date" : "20153101", "gtfs:stop" : "stop:3", "gtfs:trip" : "trip:1", "maxStopSequence" : 4 , "gtfs:stopSequence" : 3 }
-{ "@type" : "Departure", "@id" : "departure:3", "gtfs:departureTime" : "12:14", "dct:date" : "20160101", "gtfs:stop" : "stop:1", "gtfs:trip" : "trip:2","maxStopSequence" : 2 , "gtfs:stopSequence" : 2 }
-{ "@type" : "Departure", "@id" : "departure:4", "gtfs:departureTime" : "12:20", "dct:date" : "20160101", "gtfs:stop" : "stop:2", "gtfs:trip" : "trip:1","maxStopSequence" : 4 , "gtfs:stopSequence" : 3 }
-{ "@type" : "Departure", "@id" : "departure:5", "gtfs:departureTime" : "12:25", "dct:date" : "20160101", "gtfs:stop" : "stop:1", "gtfs:trip" : "trip:1","maxStopSequence" : 4 , "gtfs:stopSequence" : 4 }
-{ "@type" : "Departure", "@id" : "departure:6", "gtfs:departureTime" : "12:40", "dct:date" : "20160101", "gtfs:stop" : "stop:3", "gtfs:trip" : "trip:2","maxStopSequence" : 2 , "gtfs:stopSequence" : 2 }
+{ "@context" : {"gtfs": "http://vocab.gtfs.org/terms#", "Departure" : "http://semweb.mmlab.be/ns/stoptimes#Departure", "dct" : "http://purl.org/dc/terms/", "date":"dct:date", "departure" : "http://example.org/departure/", "trip" : "gtfs:trip", "stop":"gtfs:stop", "stopSequence":"gtfs:stopSequence", "arrivalTime":"gtfs:arrivalTime" } }
+{ "@type" : "Departure", "@id" : "departure:1", "departureTime" : "12:09", "date" : "2016-01-01", "stop" : "stop1", "trip" : "trip1", "maxStopSequence" : 4 , "stopSequence" : 1 }
+{ "@type" : "Departure", "@id" : "departure:3", "departureTime" : "12:14", "date" : "2016-01-01", "stop" : "stop1", "trip" : "trip2", "maxStopSequence" : 2 , "stopSequence" : 2 }
+{ "@type" : "Departure", "@id" : "departure:4", "departureTime" : "12:20", "date" : "2016-01-01", "stop" : "stop2", "trip" : "trip1", "maxStopSequence" : 4 , "stopSequence" : 3 }
+{ "@type" : "Departure", "@id" : "departure:5", "departureTime" : "12:25", "date" : "2016-01-01", "stop" : "stop1", "trip" : "trip1", "maxStopSequence" : 4 , "stopSequence" : 4 }
+{ "@type" : "Departure", "@id" : "departure:6", "departureTime" : "12:40", "date" : "2016-01-01", "stop" : "stop3", "trip" : "trip2", "maxStopSequence" : 2 , "stopSequence" : 2 }

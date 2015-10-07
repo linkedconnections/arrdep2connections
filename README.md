@@ -1,8 +1,6 @@
 # Arrivals and Departures to Connections
 
-__Status__: not functional - work in progress
-
-This javascript library transforms a stream of "arrivals and departures" to "connections".
+This javascript library transforms a [JSON-LD stream](https://github.com/pietercolpaert/jsonld-stream) of "arrivals and departures" to "connections".
 
 This code is useful for route planning applications where arrivals and departures are easy to generate, but connections are difficult to get right in the same processing.
 
@@ -17,10 +15,16 @@ npm install -g arrdep2connections
 Now you can use the code on top of 2 files which follow the [JSON-LD stream specification](https://github.com/pietercolpaert/jsonld-stream):
 
 ```bash
-arrdep2connections arrivalsfile.json departurefile.json -i context.json > connections.json
+node arrdep2connections --arrivals arrivals.jsonldstream --departures departures.jsonldstream [--inbound context.json] > connections.jsonldstream
 ```
 
-Optionally, you can specify a different inbound `context.json` using the `-i` flag, and a different outbound context by using the `-o` flag.
+Optionally, you can specify a different inbound `context.json` using the `--inbound` flag, and a different outbound context by using the `--outbound` flag. 
+
+You can also load connections into MongoDB using the `--mongodb` flag. See `config/development.json` for more configuration options.
+
+```bash
+node arrdep2connections --arrivals arrivals.jsonldstream --departures departures.jsonldstream --mongodb
+```
 
 ### NodeJS library
 

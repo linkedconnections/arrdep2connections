@@ -1,6 +1,8 @@
 {
   "@context" : {
     "st" : "http://semweb.mmlab.be/ns/stoptimes#",
+    "Arrival" : "st:Arrival",
+    "Departure" : "st:Departure",
     "gtfs" : "http://vocab.gtfs.org/terms#",
     "arrivalTime" : "gtfs:arrivalTime",
     "departureTime" : "gtfs:departureTime",
@@ -8,6 +10,15 @@
     "stop" : {
       "@type" : "@id",
       "@id" : "gtfs:stop"
-    }
+    },
+    "trip" : {
+      "@type" : "@id",
+      "@id" : "gtfs:trip"
+    },
+    "route" : {
+      "@type" : "@id",
+      "@id" : "gtfs:route"
+    },
+    "stopSequence" : "gtfs:stopSequence"
   }
 }

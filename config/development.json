@@ -1,0 +1,14 @@
+{
+	"mongoDbConfig": {
+		"host": "localhost",
+		"port": "27017",
+		"database": "gtfs",
+		"collection": "connections"
+	},
+	"mongodb": false,
+	"inbound": "arrdepcontext.json",
+	"outbound": "connectionscontext.json",
+	"arrivals": "./arrivals.jsonldstream",
+	"departures": "./departures.jsonldstream",
+	"self": "{./development.json}"
+}
